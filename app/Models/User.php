@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -13,6 +14,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'department_id', // <-- Added this so department_id is fully recognized
     ];
 
     protected $hidden = [
